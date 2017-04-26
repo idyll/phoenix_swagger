@@ -68,7 +68,7 @@ defmodule PhoenixSwagger.Plug.SwaggerUI do
         if (url && url.length > 1) {
           url = decodeURIComponent(url[1]);
         } else {
-          url = window.location.pathname.replace("index.html", "<%= spec_url %>")
+          url = window.location.pathname.replace("swagger/index.html", "<%= spec_url %>")
         }
 
         hljs.configure({
